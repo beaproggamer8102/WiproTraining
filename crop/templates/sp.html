@@ -1,0 +1,43 @@
+<h1 class="form-title">predicting</h1>
+        <form action="{{url_for('predict')}}" method="post">
+          <div class="main-user-info">
+            <div class="user-input-box">
+              <label for="nitrogen">Nitrogen</label>
+              <input type="text" id="nitrogen" name="nitrogen" />
+            </div>
+            <div class="user-input-box">
+              <label for="Phossporus">Phossporus</label>
+              <input type="text" id="Phossporuse" name="Phosporus" />
+            </div>
+            <div class="user-input-box">
+              <label for="pottassium">Pottassium</label>
+              <input type="pottassium" id="pottassium" name="pottassium" />
+            </div>
+            <div class="user-input-box">
+              <label for="temperature">Temperature</label>
+              <input type="text" id="temperature" name="temperature" />
+            </div>
+            <div class="user-input-box">
+              <label for="humidity">Humidity in %</label>
+              <input type="text" id="humidity" name="humidity" />
+            </div>
+            <div class="user-input-box">
+              <label for="Ph">Ph</label>
+              <input type="text" id="Ph" name="Ph" />
+            </div>
+            <div class="user-input-box">
+              <label for="rainfall">Rainfall in (mm)</label>
+              <input type="text" id="rainfall" name="rainfall" />
+            </div>
+            <div class="user-input-box">
+                <label for="">Predicted Value</label>
+                {{predicted_value}}
+              </div>
+          </div>
+      
+    
+          <div class="form-submit-btn">
+            <input type="submit" value="Predict">
+          </div>
+        </form>
+      </div>
